@@ -128,7 +128,7 @@ body, #root, html { background: #ffffff !important; }
 
 /* ── 7. 홈 화면 ─────────────────────────────────────────── */
 .home-screen { background: #ffffff !important; }
-.home-logo   { width: 110px !important; height: auto !important; mix-blend-mode: normal !important; opacity: 1 !important; }
+.home-logo   { width: 77px !important; height: auto !important; mix-blend-mode: normal !important; opacity: 1 !important; }
 .home-top    { padding: 16px 24px 12px !important; }
 
 .today-item--chore,
@@ -140,7 +140,7 @@ body, #root, html { background: #ffffff !important; }
 .today-num--chore { color: #17171c !important; }
 .today-num--order { color: #17171c !important; }
 .today-lbl {
-  font-size: 11px !important; font-weight: 500 !important;
+  font-size: 11px !important; font-weight: 700 !important;
   letter-spacing: 0.22px !important; text-transform: uppercase !important; color: #93939f !important;
 }
 
