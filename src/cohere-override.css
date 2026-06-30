@@ -236,7 +236,7 @@ body, #root, html { background: #ffffff !important; }
 .btn-secondary { background: #FEE500 !important; color: #3C1E1E !important; border: none !important; }
 
 /* ── 11. Bottom Nav ─────────────────────────────────────── */
-.nav-bar { background: #ffffff !important; border-top: 1px solid #e5e7eb !important; box-shadow: none !important; position: absolute !important; bottom: 0 !important; left: 0 !important; right: 0 !important; z-index: 100 !important; }
+.nav-bar { background: #ffffff !important; border-top: 1px solid #e5e7eb !important; box-shadow: none !important; flex-shrink: 0 !important; }
 .nav-item i               { color: #93939f !important; }
 .nav-item span            { font-size: 10px !important; font-weight: 500 !important; color: #93939f !important; }
 .nav-item.active i,
