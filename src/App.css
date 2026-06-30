@@ -1,0 +1,69 @@
+.app-shell { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--cream3); padding: 24px 0; }
+.phone-frame { width: 390px; min-height: 740px; max-height: 860px; background: var(--white); border-radius: 40px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 24px 64px rgba(0,0,0,0.18); position: relative; }
+.status-bar { background: var(--white); padding: 14px 24px 8px; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; }
+.status-time { font-size: 13px; font-weight: 700; color: var(--ink); }
+.status-icons { font-size: 12px; color: var(--ink4); }
+.screen-area { flex: 1; display: flex; flex-direction: column; overflow: hidden; position: relative; }
+.scroll-area { flex: 1; overflow-y: auto; padding-bottom: var(--nav-height); -webkit-overflow-scrolling: touch; }
+.scroll-area::-webkit-scrollbar { display: none; }
+
+/* Screen header */
+.screen-header { background: var(--white); padding: 20px 22px 16px; border-bottom: 0.5px solid var(--cream2); flex-shrink: 0; }
+.screen-header h1 { font-family: 'DM Serif Display', Georgia, serif; font-weight: 300; font-size: 26px; color: var(--ink); }
+.screen-header p { font-size: 14px; color: var(--ink4); margin-top: 3px; }
+
+/* Section label */
+.section-label { font-size: 12px; font-weight: 700; color: var(--ink4); letter-spacing: 0.8px; text-transform: uppercase; padding: 0 22px; margin: 16px 0 10px; }
+
+/* Buttons — 면 처리 */
+.btn-primary { width: 100%; background: var(--gold); color: var(--white); border-radius: var(--radius-md); padding: 17px; font-size: 17px; font-weight: 700; margin-bottom: 10px; border: none; }
+.btn-secondary { width: 100%; background: var(--cream2); color: var(--ink2); border-radius: var(--radius-md); padding: 15px; font-size: 16px; font-weight: 600; margin-bottom: 10px; border: none; }
+.btn-ghost { font-size: 14px; color: var(--ink4); text-align: center; width: 100%; padding: 10px; }
+.btn-ghost span { color: var(--gold-dark); font-weight: 700; }
+
+/* Toast */
+.toast { position: absolute; bottom: calc(var(--nav-height) + 12px); left: 50%; transform: translateX(-50%) translateY(12px); background: var(--ink); color: var(--white); padding: 11px 20px; border-radius: 22px; font-size: 14px; font-weight: 500; opacity: 0; transition: all 0.25s ease; z-index: 300; white-space: nowrap; pointer-events: none; }
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* Bottom sheet */
+.sheet-overlay { position: absolute; inset: 0; background: rgba(28,26,21,0.48); z-index: 200; display: flex; align-items: flex-end; border-radius: 40px; overflow: hidden; }
+.bottom-sheet { background: var(--white); border-radius: 28px 28px 0 0; padding: 18px 22px 36px; width: 100%; }
+.sheet-handle { width: 40px; height: 4px; background: var(--cream3); border-radius: 2px; margin: 0 auto 20px; }
+.sheet-title { font-family: 'DM Serif Display', Georgia, serif; font-weight: 300; font-size: 22px; color: var(--ink); margin-bottom: 5px; }
+.sheet-sub { font-size: 14px; color: var(--ink4); margin-bottom: 24px; }
+
+/* Progress dots */
+.ob-progress { display: flex; gap: 6px; margin-bottom: 20px; }
+.ob-dot { height: 4px; flex: 1; background: var(--cream3); border-radius: 2px; }
+.ob-dot.done { background: var(--gold); }
+
+/* Toggle */
+.toggle { width: 48px; height: 28px; background: var(--cream3); border-radius: 14px; position: relative; cursor: pointer; transition: background 0.2s; flex-shrink: 0; }
+.toggle.on { background: var(--gold); }
+.toggle-thumb { width: 24px; height: 24px; background: white; border-radius: 50%; position: absolute; top: 2px; left: 2px; transition: left 0.2s; }
+.toggle.on .toggle-thumb { left: 22px; }
+
+/* Progress bar */
+.progress-bar-bg { height: 5px; background: var(--cream2); border-radius: 3px; }
+.progress-bar-fill { height: 5px; border-radius: 3px; transition: width 0.4s ease; }
+.progress-bar-fill.red    { background: var(--red); }
+.progress-bar-fill.orange { background: var(--orange); }
+.progress-bar-fill.green  { background: var(--green); }
+
+/* Urgency dot */
+.urgency-dot { width: 11px; height: 11px; border-radius: 50%; flex-shrink: 0; }
+.urgency-dot.red    { background: var(--red); }
+.urgency-dot.orange { background: var(--orange); }
+.urgency-dot.green  { background: var(--green); }
+
+/* Badge */
+.badge { font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 20px; }
+.badge.urgent { background: var(--red-light);    color: var(--red); }
+.badge.soon   { background: var(--orange-light);  color: var(--orange); }
+.badge.ok     { background: var(--green-light);   color: var(--green); }
+
+@media (max-width: 420px) {
+  .app-shell { padding: 0; align-items: flex-start; background: var(--white); }
+  .phone-frame { width: 100%; border-radius: 0; min-height: 100vh; max-height: none; box-shadow: none; }
+  .sheet-overlay { border-radius: 0; }
+}

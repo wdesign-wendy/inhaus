@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Pretendard:wght@400;500;600;700;800&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css');
+
+:root {
+  --cream: #F5F0E8;
+  --cream2: #EDE8DE;
+  --cream3: #E0D9CD;
+  --gold: #E8A838;
+  --gold-dark: #C4861A;
+  --gold-light: #FDF3E0;
+  --gold-muted: #F5E4BC;
+  --red: #D94F3D;
+  --red-light: #FBF0EE;
+  --orange: #E07C3A;
+  --orange-light: #FDF3EB;
+  --green: #4A9B6F;
+  --green-light: #EDF5F0;
+  --ink: #1C1A15;
+  --ink2: #3D3A30;
+  --ink3: #6B6558;
+  --ink4: #9B9488;
+  --white: #FDFAF5;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  --nav-height: 76px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+html, body, #root { height: 100%; }
+body {
+  font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', sans-serif;
+  background: var(--cream3);
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+}
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+input { font-family: inherit; }

@@ -1,0 +1,36 @@
+.splash {
+  position: absolute;
+  inset: 0;
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.splash.visible { opacity: 1; }
+
+.splash-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.splash-logo {
+  width: 200px;
+  /* 로고가 흰 배경이므로 크림 배경에 믹스블렌드로 자연스럽게 */
+  mix-blend-mode: multiply;
+  opacity: 0.92;
+}
+
+.splash-tagline {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.45;
+  color: var(--ink4);
+  letter-spacing: 0.3px;
+  text-align: center;
+}

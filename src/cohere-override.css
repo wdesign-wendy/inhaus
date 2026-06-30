@@ -1,0 +1,258 @@
+/* ============================================================
+   INHAUS — COHERE DESIGN SYSTEM OVERRIDE
+   자동 생성: apply-design.js
+   ============================================================ */
+
+/* ── 1. Google Font ─────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap');
+
+/* ── 2. Design Tokens ───────────────────────────────────── */
+:root {
+  --cream:        #ffffff;
+  --cream2:       #eeece7;
+  --cream3:       #f2f2f2;
+  --white:        #ffffff;
+  --gold:         #17171c;
+  --gold-dark:    #000000;
+  --gold-light:   #eeece7;
+  --gold-muted:   #f2f2f2;
+  --green:        #003c33;
+  --green-light:  #edfce9;
+  --ink:          #212121;
+  --ink2:         #17171c;
+  --ink3:         #75758a;
+  --ink4:         #93939f;
+  --orange:       #ff7759;
+  --orange-light: #fff5f2;
+  --red:          #b30000;
+  --red-light:    #fff5f5;
+  --radius-sm:    8px;
+  --radius-md:    16px;
+  --radius-lg:    22px;
+  --radius-xl:    32px;
+}
+
+/* ── 3. Global font ─────────────────────────────────────── */
+*, *::before, *::after {
+  font-family: 'Space Grotesk', 'Inter', ui-sans-serif, system-ui, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* 아이콘 폰트 복원 */
+.ti::before,
+[class*="ti-"]::before,
+[class^="ti"]::before,
+i[class*="ti"]::before {
+  font-family: tabler-icons !important;
+}
+
+body, #root, html { background: #ffffff !important; }
+
+/* ── 4. Splash ──────────────────────────────────────────── */
+.splash {
+  background: #f5f2ed !important;
+  background-image: url('/splash.png') !important;
+  background-size: cover !important;
+  background-position: top center !important;
+  padding: 0 !important;
+  align-items: flex-start !important;
+}
+.splash-inner, .splash-logo, .splash-tagline { display: none !important; }
+
+/* ── 5. Onboarding ──────────────────────────────────────── */
+.ob-screen, .ob-page { background: #ffffff !important; }
+.ob-emoji { font-size: 48px !important; margin-bottom: 24px !important; }
+.ob-title {
+  font-size: 30px !important; font-weight: 500 !important;
+  letter-spacing: -0.6px !important; line-height: 1.1 !important; color: #17171c !important;
+}
+.ob-sub { font-size: 15px !important; color: #93939f !important; }
+.ob-label {
+  font-size: 11px !important; font-weight: 500 !important;
+  letter-spacing: 0.28px !important; text-transform: uppercase !important; color: #93939f !important;
+}
+.ob-h2 {
+  font-size: 26px !important; font-weight: 500 !important;
+  letter-spacing: -0.52px !important; color: #17171c !important;
+}
+.ob-sub2 { font-size: 14px !important; color: #93939f !important; }
+.ob-p3-header {
+  font-size: 26px !important; font-weight: 500 !important;
+  letter-spacing: -0.52px !important; color: #17171c !important;
+}
+
+/* 홈 타입 선택 카드 */
+.room-opt {
+  background: #ffffff !important; border: 1px solid #d9d9dd !important;
+  border-radius: 8px !important; box-shadow: none !important;
+}
+.room-opt.selected { border-color: #17171c !important; box-shadow: inset 0 0 0 1px #17171c !important; }
+.room-opt strong { font-size: 15px !important; font-weight: 500 !important; color: #17171c !important; }
+.room-opt span   { font-size: 13px !important; color: #93939f !important; }
+
+/* 루틴 프리뷰 카드 */
+.routine-preview-card {
+  background: #ffffff !important; border: 1px solid #d9d9dd !important;
+  border-radius: 8px !important; box-shadow: none !important;
+}
+.rpc-title { font-size: 14px !important; font-weight: 500 !important; color: #17171c !important; }
+.rpc-item i { color: #17171c !important; }
+
+/* 날짜 선택 */
+.ri-summary-bar { background: #eeece7 !important; border-radius: 8px !important; }
+.ri-card {
+  background: #ffffff !important; border: 1px solid #d9d9dd !important;
+  border-radius: 8px !important; box-shadow: none !important;
+}
+.ri-card.checked  { border-color: #17171c !important; }
+.ri-card.unchecked { opacity: 0.5 !important; }
+.ri-checkbox { background: #f2f2f2 !important; border: 1px solid #d9d9dd !important; border-radius: 6px !important; }
+.ri-checkbox.on { background: #17171c !important; border-color: #17171c !important; }
+.ri-checkbox i  { color: #ffffff !important; }
+.ri-name { font-size: 15px !important; font-weight: 500 !important; color: #17171c !important; }
+.ri-date-btn {
+  background: #f2f2f2 !important; color: #212121 !important;
+  border: 1px solid #d9d9dd !important; border-radius: 30px !important; font-size: 13px !important;
+}
+.ri-date-btn.active-green,
+.ri-date-btn.active-blue { background: #17171c !important; color: #ffffff !important; border-color: #17171c !important; }
+.ri-date-btn.dimmed { opacity: 0.4 !important; }
+
+/* ── 6. CTA 버튼 ────────────────────────────────────────── */
+.ob-step, .routine-add-confirm {
+  background: #17171c !important; color: #ffffff !important;
+  border: none !important; border-radius: 32px !important;
+  font-size: 14px !important; font-weight: 500 !important; box-shadow: none !important;
+}
+.routine-add-confirm:disabled { background: #d9d9dd !important; color: #93939f !important; }
+
+/* ── 7. 홈 화면 ─────────────────────────────────────────── */
+.home-screen { background: #ffffff !important; }
+.home-logo   { width: 110px !important; height: auto !important; mix-blend-mode: normal !important; opacity: 1 !important; }
+.home-top    { padding: 16px 24px 12px !important; }
+
+.today-item--chore,
+.today-item--order {
+  background: #eeece7 !important; border: none !important;
+  border-radius: 8px !important; box-shadow: none !important;
+}
+.today-num        { font-size: 40px !important; font-weight: 400 !important; letter-spacing: -1.6px !important; color: #17171c !important; }
+.today-num--chore { color: #17171c !important; }
+.today-num--order { color: #17171c !important; }
+.today-lbl {
+  font-size: 11px !important; font-weight: 500 !important;
+  letter-spacing: 0.22px !important; text-transform: uppercase !important; color: #93939f !important;
+}
+
+.chore-card {
+  background: #ffffff !important; border: none !important;
+  border-bottom: 1px solid #e5e7eb !important; border-radius: 0 !important; box-shadow: none !important;
+}
+.chore-card.done { opacity: 0.45 !important; }
+.chore-name  { font-size: 15px !important; font-weight: 400 !important; color: #212121 !important; }
+.chore-sub   { font-size: 12px !important; color: #93939f !important; }
+.chore-check { background: #f2f2f2 !important; border: 1px solid #d9d9dd !important; border-radius: 50% !important; }
+.chore-check.checked { background: #17171c !important; border-color: #17171c !important; }
+.chore-check i { color: #ffffff !important; }
+
+.con-strip     { background: #ffffff !important; border: 1px solid #d9d9dd !important; border-radius: 8px !important; box-shadow: none !important; }
+.con-strip-row { border-bottom: 1px solid #e5e7eb !important; }
+
+/* ── 8. Routine 화면 ────────────────────────────────────── */
+.routine-screen { background: #ffffff !important; }
+.room-card {
+  background: #ffffff !important; border: none !important;
+  border-top: none !important; border-bottom: 1px solid #e5e7eb !important;
+  border-radius: 0 !important; box-shadow: none !important; margin-bottom: 0 !important;
+}
+.room-header      { border-bottom: 1px solid #e5e7eb !important; }
+.room-name        { font-size: 16px !important; font-weight: 500 !important; color: #17171c !important; }
+.room-count       { font-size: 13px !important; color: #93939f !important; }
+.routine-item     { border-bottom: 1px solid #e5e7eb !important; }
+.routine-item-name { font-size: 15px !important; color: #212121 !important; }
+.routine-cycle    { font-size: 13px !important; color: #93939f !important; }
+.routine-edit-btn {
+  background: #eeece7 !important; color: #17171c !important; border: none !important;
+  border-radius: 32px !important; font-size: 12px !important; font-weight: 500 !important;
+  padding: 5px 14px !important; box-shadow: none !important;
+}
+.routine-add-btn {
+  background: #ffffff !important; border: 1px solid #17171c !important;
+  border-radius: 32px !important; color: #17171c !important;
+  font-size: 14px !important; font-weight: 500 !important; box-shadow: none !important;
+}
+.routine-cycle-opt {
+  background: #f2f2f2 !important; border: 1px solid #d9d9dd !important;
+  border-radius: 30px !important; color: #212121 !important;
+}
+.routine-cycle-opt.selected { background: #17171c !important; color: #ffffff !important; border-color: #17171c !important; }
+.routine-name-input { border: 1px solid #d9d9dd !important; border-radius: 8px !important; }
+.routine-name-input:focus { border-color: #17171c !important; box-shadow: none !important; outline: none !important; }
+.routine-section-label {
+  font-size: 11px !important; font-weight: 500 !important;
+  letter-spacing: 0.22px !important; text-transform: uppercase !important; color: #93939f !important;
+}
+.routine-room-opt { background: #f2f2f2 !important; border: 1px solid #d9d9dd !important; border-radius: 8px !important; }
+.routine-room-opt.selected { background: #eeece7 !important; border-color: #17171c !important; }
+
+/* ── 9. Supplies 화면 ───────────────────────────────────── */
+.consumable-screen { background: #ffffff !important; }
+.con-item {
+  background: #ffffff !important;
+  border-top: none !important;
+  border-bottom: 1px solid #e5e7eb !important;
+}
+.con-item:last-child { border-bottom: none !important; }
+.con-name  { font-size: 15px !important; font-weight: 400 !important; color: #212121 !important; }
+.con-dday  { font-size: 13px !important; font-weight: 500 !important; }
+.con-dday.r { color: #b30000 !important; }
+.con-dday.o { color: #ff7759 !important; }
+.con-dday.g { color: #003c33 !important; }
+
+/* Cycle 버튼 — border 없이 "Tap to edit"만 강조 */
+.con-cycle-btn {
+  background: none !important; border: none !important;
+  border-radius: 0 !important; padding: 0 !important;
+  color: #93939f !important; font-size: 13px !important; font-weight: 400 !important;
+}
+.con-cycle-btn span:last-child { color: #17171c !important; font-weight: 600 !important; }
+
+.cycle-opt { background: #f2f2f2 !important; border: 1px solid #d9d9dd !important; border-radius: 30px !important; color: #212121 !important; font-size: 13px !important; }
+.cycle-opt.selected { background: #17171c !important; color: #ffffff !important; border-color: #17171c !important; }
+
+/* ── 10. Partner 화면 ───────────────────────────────────── */
+.partner-screen   { background: #ffffff !important; }
+.partner-hero-title { font-size: 26px !important; font-weight: 500 !important; letter-spacing: -0.52px !important; color: #17171c !important; }
+.partner-hero-sub { font-size: 15px !important; color: #93939f !important; }
+.partner-link-box { background: #eeece7 !important; border: none !important; border-radius: 8px !important; box-shadow: none !important; }
+.partner-link-label {
+  font-size: 11px !important; font-weight: 500 !important;
+  letter-spacing: 0.22px !important; text-transform: uppercase !important; color: #93939f !important;
+}
+
+/* Partner 버튼 radius 통일 */
+.btn-primary, .btn-secondary { border-radius: 8px !important; }
+/* KakaoTalk 브랜드 컬러 */
+.btn-secondary { background: #FEE500 !important; color: #3C1E1E !important; border: none !important; }
+
+/* ── 11. Bottom Nav ─────────────────────────────────────── */
+.nav-bar { background: #ffffff !important; border-top: 1px solid #e5e7eb !important; box-shadow: none !important; }
+.nav-item i               { color: #93939f !important; }
+.nav-item span            { font-size: 10px !important; font-weight: 500 !important; color: #93939f !important; }
+.nav-item.active i,
+.nav-item.active span     { color: #17171c !important; }
+
+/* ── 12. Sheet / Modal ──────────────────────────────────── */
+[class*="sheet"], [class*="modal"] {
+  background: #ffffff !important;
+  border-radius: 16px 16px 0 0 !important;
+  box-shadow: 0 -1px 0 #d9d9dd !important;
+}
+.routine-sheet-close { color: #93939f !important; background: none !important; border: none !important; }
+
+/* ── 13. Input focus ────────────────────────────────────── */
+input:focus, textarea:focus, select:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px #17171c !important;
+  border-color: #17171c !important;
+}

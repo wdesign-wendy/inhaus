@@ -1,0 +1,16 @@
+.settings-screen { display: flex; flex-direction: column; flex: 1; overflow: hidden; }
+.settings-profile { padding: 26px 22px 18px; display: flex; align-items: center; gap: 18px; background: var(--white); }
+.settings-avatar { width: 60px; height: 60px; background: var(--gold-muted); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 700; color: var(--gold-dark); flex-shrink: 0; }
+.settings-name { font-family: 'DM Serif Display', Georgia, serif; font-weight: 300; font-size: 22px; color: var(--ink); }
+.settings-type { font-size: 14px; color: var(--ink4); margin-top: 3px; }
+.settings-section { background: var(--white); margin: 0 18px 10px; border-radius: var(--radius-md); border: 0.5px solid var(--cream3); overflow: hidden; }
+.settings-item { padding: 17px 18px; display: flex; align-items: center; justify-content: space-between; border-bottom: 0.5px solid var(--cream2); cursor: pointer; }
+.settings-item:last-child { border-bottom: none; }
+.settings-item-left { display: flex; align-items: center; gap: 14px; }
+.settings-item-left > .ti { font-size: 20px; color: var(--ink3); }
+.settings-item-name { font-size: 16px; color: var(--ink); }
+.settings-item-sub { font-size: 13px; color: var(--ink4); margin-top: 2px; }
+.settings-item > .ti-chevron-right { font-size: 17px; color: var(--ink4); }
+.lang-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.lang-opt { padding: 16px; border-radius: var(--radius-md); background: var(--cream2); border: none; font-size: 16px; font-weight: 600; color: var(--ink3); cursor: pointer; font-family: inherit; transition: all 0.15s; }
+.lang-opt.selected { background: var(--gold); color: var(--white); }

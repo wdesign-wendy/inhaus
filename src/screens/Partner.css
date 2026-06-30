@@ -1,0 +1,11 @@
+.partner-screen { display: flex; flex-direction: column; flex: 1; overflow: hidden; }
+.partner-hero { padding: 40px 28px 28px; text-align: center; }
+.partner-hero-title { font-family: 'DM Serif Display', Georgia, serif; font-weight: 300; font-size: 26px; color: var(--ink); margin-bottom: 10px; }
+.partner-hero-sub { font-size: 15px; color: var(--ink3); line-height: 1.65; white-space: pre-line; }
+.partner-link-box { background: var(--white); border: 0.5px dashed var(--cream3); border-radius: var(--radius-md); padding: 18px; margin: 0 18px 18px; text-align: center; }
+.partner-link-label { font-size: 13px; color: var(--ink4); margin-bottom: 8px; }
+.partner-link-url { font-size: 14px; color: var(--gold-dark); font-weight: 600; }
+.partner-feat { display: flex; align-items: flex-start; gap: 14px; padding: 13px 22px; }
+.partner-feat i { font-size: 22px; color: var(--gold-dark); margin-top: 2px; flex-shrink: 0; }
+.partner-feat strong { display: block; font-size: 15px; color: var(--ink); margin-bottom: 3px; }
+.partner-feat span { font-size: 13px; color: var(--ink4); }

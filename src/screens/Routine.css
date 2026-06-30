@@ -1,0 +1,26 @@
+.routine-screen { display: flex; flex-direction: column; flex: 1; overflow: hidden; }
+.room-card { background: #fff; margin: 0 18px 9px; border-radius: var(--radius-md); border: none; overflow: hidden; }
+.room-header { width: 100%; padding: 16px 18px; display: flex; justify-content: space-between; align-items: center; background: none; border: none; cursor: pointer; text-align: left; font-family: inherit; }
+.room-name { font-size: 16px; font-weight: 700; color: var(--ink); }
+.room-count { font-size: 13px; color: var(--ink4); }
+.routine-item { padding: 13px 18px; border-top: 0.5px solid #E4E4E4; display: flex; align-items: center; justify-content: space-between; }
+.routine-item-left { display: flex; align-items: center; gap: 10px; }
+.routine-item-name { font-size: 15px; color: var(--ink); }
+.routine-cycle { font-size: 13px; color: var(--ink4); }
+.routine-edit-btn { font-size: 13px; color: var(--gold-dark); font-weight: 700; background: var(--gold-muted); border: none; cursor: pointer; padding: 5px 10px; border-radius: 8px; font-family: inherit; }
+.routine-add-btn { width: 100%; background: var(--cream2); border: none; color: var(--ink3); font-size: 15px; font-weight: 600; padding: 15px; border-radius: var(--radius-md); cursor: pointer; font-family: inherit; }
+.routine-cycle-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 18px; }
+.routine-cycle-opt { min-height: 52px; padding: 14px 8px; border-radius: var(--radius-md); border: none; background: var(--cream2); color: var(--ink3); font-size: 16px; font-weight: 700; cursor: pointer; font-family: inherit; }
+.routine-cycle-opt.selected { background: var(--gold); color: var(--white); }
+.routine-sheet-close { margin-bottom: 0; }
+
+/* Add chore sheet */
+.routine-name-input { width: 100%; background: var(--white); border: 1.5px solid var(--cream3); border-radius: var(--radius-md); padding: 14px 16px; font-size: 16px; color: var(--ink); outline: none; font-family: inherit; margin-bottom: 20px; transition: border-color 0.15s; }
+.routine-name-input:focus { border-color: var(--gold); }
+.routine-name-input::placeholder { color: var(--ink4); }
+.routine-section-label { font-size: 12px; font-weight: 700; color: var(--ink4); letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 10px; }
+.routine-room-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+.routine-room-opt { width: 100%; padding: 13px 16px; border-radius: var(--radius-md); border: 1.5px solid var(--cream3); background: var(--white); font-size: 15px; color: var(--ink3); cursor: pointer; text-align: left; font-family: inherit; transition: all 0.15s; }
+.routine-room-opt.selected { border-color: var(--gold); background: var(--gold-light); color: var(--ink); }
+.routine-add-confirm { margin-top: 8px; margin-bottom: 0; }
+.routine-add-confirm:disabled { opacity: 0.4; cursor: not-allowed; }
