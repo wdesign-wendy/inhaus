@@ -20,12 +20,12 @@ export default function App() {
   return (
     <div className="app-shell">
       <div className="phone-frame">
+        {!splashDone && <Splash onDone={() => setSplashDone(true)} />}
         <div className="status-bar">
           <span className="status-time">9:41</span>
           <span className="status-icons">●●● 🔋</span>
         </div>
         <div className="screen-area">
-          {!splashDone && <Splash onDone={() => setSplashDone(true)} />}
           {splashDone && (!onboardingDone ? <Onboarding /> : <Screen />)}
         </div>
         {splashDone && onboardingDone ? <NavBar /> : <div style={{ height: 'var(--nav-height)', flexShrink: 0 }} />}

@@ -8,6 +8,7 @@
   z-index: 500;
   opacity: 0;
   transition: opacity 0.5s ease;
+  border-radius: inherit;
 }
 .splash.visible { opacity: 1; }
 
