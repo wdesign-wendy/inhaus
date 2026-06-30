@@ -119,7 +119,7 @@ body, #root, html { background: #ffffff !important; }
 .ri-date-btn.dimmed { opacity: 0.4 !important; }
 
 /* ── 6. CTA 버튼 ────────────────────────────────────────── */
-.ob-step, .routine-add-confirm {
+.routine-add-confirm {
   background: #17171c !important; color: #ffffff !important;
   border: none !important; border-radius: 32px !important;
   font-size: 14px !important; font-weight: 500 !important; box-shadow: none !important;
