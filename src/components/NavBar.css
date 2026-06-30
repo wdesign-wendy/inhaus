@@ -1,4 +1,4 @@
-.nav-bar { background: var(--white); border-top: 0.5px solid var(--cream3); display: flex; height: var(--nav-height); flex-shrink: 0; }
+.nav-bar { background: var(--white); border-top: 0.5px solid var(--cream3); display: flex; height: var(--nav-height); position: absolute; bottom: 0; left: 0; right: 0; z-index: 100; }
 .nav-item { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 8px 0 14px; }
 .nav-item i { font-size: 24px; color: var(--ink4); }
 .nav-item span { font-size: 11px; font-weight: 600; color: var(--ink4); letter-spacing: 0.3px; }

@@ -28,7 +28,7 @@ export default function App() {
         <div className="screen-area">
           {splashDone && (!onboardingDone ? <Onboarding /> : <Screen />)}
         </div>
-        {splashDone && onboardingDone ? <NavBar /> : <div style={{ height: 'var(--nav-height)', flexShrink: 0 }} />}
+        {splashDone && onboardingDone && <NavBar />}
       </div>
     </div>
   );
