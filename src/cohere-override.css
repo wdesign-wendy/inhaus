@@ -246,8 +246,9 @@ body, #root, html { background: #ffffff !important; }
 [class*="sheet"], [class*="modal"] {
   background: #ffffff !important;
   border-radius: 16px 16px 0 0 !important;
-  box-shadow: 0 -1px 0 #d9d9dd !important;
+  box-shadow: none !important;
 }
+.sheet-title { margin-bottom: 8px !important; }
 .routine-sheet-close { color: #93939f !important; background: none !important; border: none !important; }
 
 /* ── 13. Input focus ────────────────────────────────────── */
